@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Agent assisted protein design
+title: Anthropic × Adaptyv Protein Design Competition
 ---
 
-# Agent assisted protein design
+# Anthropic × Adaptyv Protein Design Competition
 
 A three-part account of five protein-design challenges: the scientific objectives, the agents' collaborative workflow, and the decisions that changed along the way.
 
@@ -11,9 +11,9 @@ The series follows a human-directed project in which agents generated hypotheses
 
 ## The series
 
-**1. Five targets and the structural reasoning behind our designs**
+**[1. Five targets and the structural reasoning behind our designs](articles/01-five-targets.html)**
 
-Competition context, requirements beyond affinity, and the reasoning behind the selected epitopes. Article in preparation.
+Competition context, requirements beyond affinity, and the reasoning behind the selected epitopes. Local draft available; figures remain placeholders.
 
 **2. How the agents collaborated**
 
