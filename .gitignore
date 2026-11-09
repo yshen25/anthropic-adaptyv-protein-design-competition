@@ -1,0 +1,25 @@
+# Local system and editor state
+.DS_Store
+.idea/
+.vscode/
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python and generated site output
+__pycache__/
+*.py[cod]
+.venv/
+_site/
+.jekyll-cache/
+.sass-cache/
+vendor/
+
+# Figures and their experimental rendering script are deferred.
+# Preserve them locally; do not include them in the publication repository yet.
+/docs/assets/figures/
+/scripts/render_epitopes.py
