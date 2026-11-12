@@ -1,0 +1,85 @@
+:root {
+  color-scheme: light;
+  --page-bg: #ffffff;
+  --page-text: #535b66;
+  --heading: #202630;
+  --link: #176da5;
+  --link-hover: #084e7a;
+  --muted: #606975;
+  --border: #d7dce2;
+  --panel: #f5f7fa;
+  --code: #303947;
+}
+
+/* With no JavaScript, or with System selected, track the device live. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --page-bg: #111820;
+    --page-text: #c3ccd7;
+    --heading: #eef3f9;
+    --link: #80c5f7;
+    --link-hover: #b7dfff;
+    --muted: #a9b5c4;
+    --border: #3b4859;
+    --panel: #1b2531;
+    --code: #d8e4f1;
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page-bg: #111820;
+  --page-text: #c3ccd7;
+  --heading: #eef3f9;
+  --link: #80c5f7;
+  --link-hover: #b7dfff;
+  --muted: #a9b5c4;
+  --border: #3b4859;
+  --panel: #1b2531;
+  --code: #d8e4f1;
+}
+
+body { background: var(--page-bg); color: var(--page-text); }
+h1, h2, h3, h4, h5, h6, strong, dt, th { color: var(--heading); }
+a { color: var(--link); }
+a:hover, a:focus { color: var(--link-hover); }
+a small, a:hover small { color: var(--muted); }
+blockquote, th, td, section { border-color: var(--border); }
+hr { background: var(--border); }
+code, pre, .highlight { color: var(--code); }
+pre, .highlight, kbd, ul.downloads { background: var(--panel); border-color: var(--border); }
+.downloads li { border-color: var(--border); }
+.downloads a, .downloads a strong { color: var(--heading); }
+.downloads a:hover, .downloads a:focus { color: var(--link-hover); }
+kbd { color: var(--code); box-shadow: inset 0 -1px 0 var(--border); }
+/* Preserve the original scientific figure colors in either mode. */
+img { max-width: 100%; height: auto; }
+
+.theme-control {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1.5rem 0;
+  color: var(--page-text);
+  font-size: 0.9rem;
+}
+.theme-control select {
+  font: inherit;
+  color: var(--heading);
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.4rem 0.6rem;
+  min-height: 36px;
+}
+.theme-control select:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; }
+
+@media print {
+  :root { color-scheme: light; }
+  body { background: white; color: #333; }
+  h1, h2, h3, h4, h5, h6, strong, dt, th { color: #111; }
+  a { color: #155c8a; }
+  .theme-control { display: none; }
+}
