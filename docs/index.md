@@ -1,30 +1,40 @@
 ---
 layout: default
-title: Anthropic × Adaptyv Protein Design Competition
+title: AI agents in protein design
+description: Five protein targets, structural hypotheses, and lessons from a human-directed AI co-scientist workflow in the Anthropic × Adaptyv competition.
+image: /assets/figures/C1.png
 ---
 
-# Anthropic × Adaptyv Protein Design Competition
+# AI agents in protein design
 
-A three-part account of five protein-design challenges: the scientific objectives, the agents' collaborative workflow, and the decisions that changed along the way.
+**Five targets. Different biological demands. A human-directed AI co-scientist workflow.**
 
-The series follows a human-directed project in which agents generated hypotheses, carried out analyses and operations, and reviewed evidence. All five challenges have been submitted; experimental results for our designs are not reported here.
+What happens when AI agents have to reason beyond binding affinity—to pH switching, cross-species recognition, receptor activation and a single amino-acid difference?
 
-## The series
+My colleague and I explored that question in the **Anthropic × Adaptyv Protein Design Competition**. We submitted designs to all five challenges, using agents to propose hypotheses, run analyses and review evidence while we directed the work and made the final decisions.
 
-**[1. AI-powered protein design: five targets closer to real drug development](articles/01-five-targets.html)**
+This series follows the reasoning behind those designs. Experimental performance has not yet been established in the evidence presented here.
 
-Competition context, requirements beyond affinity, and the reasoning behind the selected epitopes. Includes five structural views and an official competition illustration.
+## Start with the science
 
-**2. How the agents collaborated**
+### [1. AI-powered protein design: five targets beyond binding affinity](articles/01-five-targets.html)
 
-The roles, handoffs, checkpoints and human interventions that supported hypothesis generation, execution and review. Article in preparation.
+Meet EGFR, TNF-α, GLP1R, TfR1 and KRAS-G12D pMHC. See how the agents translated biological objectives into specific structural hypotheses—and why an attractive interface was only the beginning.
 
-**3. What the decision trajectories revealed**
+[![EGFR domain III with the agent-proposed design patch highlighted in blue](assets/figures/C1.png)](articles/01-five-targets.html)
 
-Failure patterns, questions raised outside the agent workflow, and their implications for assay validation. Article in preparation.
+[**Read the first article →**](articles/01-five-targets.html)
 
-Selected code and documented workflow examples will accompany the articles.
+## Next in the series
 
-[Official competition](https://proteinbase.com/competitions/anthropic-adaptyv-2026)
+**2. How the agents collaborated** · In preparation
 
-[Copyright and reuse](reuse.html) · Original contributions: all rights reserved.
+The roles, handoffs, persistent state, reviews and human interventions behind the scientific work.
+
+**3. What the decision trajectories revealed** · In preparation
+
+The assumptions, failures and counterexamples that changed our decisions.
+
+---
+
+An independent participant account. [Official competition](https://proteinbase.com/competitions/anthropic-adaptyv-2026) · [Repository](https://github.com/yshen25/anthropic-adaptyv-protein-design-competition) · [Copyright and reuse](reuse.html)

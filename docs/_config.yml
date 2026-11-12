@@ -1,3 +1,5 @@
 title: Anthropic × Adaptyv Protein Design Competition
 description: Five protein design challenges, structural reasoning, and lessons from agent collaboration.
 theme: jekyll-theme-minimal
+url: "https://yshen25.github.io"
+baseurl: "/anthropic-adaptyv-protein-design-competition"
