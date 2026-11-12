@@ -1,7 +1,11 @@
 # Local system and editor state
 .DS_Store
+._*
 .idea/
 .vscode/
+*.swp
+*.swo
+*~
 
 # Credentials and local configuration
 .env
@@ -9,17 +13,38 @@
 !.env.example
 *.pem
 *.key
+.aws/
 
-# Python and generated site output
+# Python environments and caches
 __pycache__/
 *.py[cod]
 .venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Generated website and dependency output
 _site/
 .jekyll-cache/
+.jekyll-metadata
 .sass-cache/
 vendor/
+node_modules/
 
-# Figures and their experimental rendering script are deferred.
-# Preserve them locally; do not include them in the publication repository yet.
-/docs/assets/figures/
+# Local publication checks and working exports
+/publication_checks/
+*.log
+
+# Only selected article figures and their current publication manifest.
+# Unused official downloads and superseded working renders remain local.
+/docs/assets/figures/*
+!/docs/assets/figures/C1.png
+!/docs/assets/figures/C2.png
+!/docs/assets/figures/C3.png
+!/docs/assets/figures/C4.png
+!/docs/assets/figures/C5.png
+!/docs/assets/figures/article_figure_manifest.json
+
+# Historical rendering experiment: does not reproduce current C1–C5 images.
 /scripts/render_epitopes.py

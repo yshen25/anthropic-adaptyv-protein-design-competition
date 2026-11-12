@@ -1,28 +1,31 @@
 ---
 layout: default
-title: Five targets and the structural reasoning behind our designs
+title: "AI-powered protein design: five targets closer to real drug development"
 description: What the Anthropic × Adaptyv competition asked beyond affinity, and how agents translated those objectives into structural hypotheses.
 ---
 
 [← Series homepage](../index.html)
 
-# Five targets and the structural reasoning behind our designs
+# AI-powered protein design: five targets closer to real drug development
 
-*Article 1 of 3 · Draft for discussion*
+*Article 1 of 3 · November 2026*
 
-I submitted designs to all five challenges in the Anthropic × Adaptyv Protein Design Competition. Agents generated hypotheses, performed much of the analysis and operational work, and reviewed the resulting evidence. My role included setting priorities, challenging decisions, authorizing consequential runs and completing submissions.
+Anthropic and Adaptyv hosted a five-challenge protein design competition beginning on September 28, 2026, with the final submission deadline on November 9. Challenges opened on successive Mondays, with overlapping design windows and some deadline adjustments. [The official schedule and participation rules](https://proteinbase.com/competitions/anthropic-adaptyv-2026) describe three tracks: research labs and companies, supported individual researchers and small teams, and a self-supported open track. My colleague and I participated in Track 3, partly to have fun and partly to explore what AI agents could contribute to scientific work.
 
-Before describing that collaboration, it helps to understand the scientific task. Each challenge asked for binding to a target, but affinity alone could not satisfy the full objective. Some designs needed to respond to pH, some needed to recognize both human and mouse proteins, one needed to activate a receptor, and another needed to discriminate a single amino-acid change.
+One unusual feature was the selection process. Submissions from Tracks 2 and 3 were pooled for a Claude-based workflow to recommend designs for laboratory testing, with final approval by people at both organizers. The [selection prompt is public](https://proteinbase.com/competitions/anthropic-adaptyv-2026/selection).
+
+Our main focus was testing an AI co-scientist workflow rather than developing a new protein-design algorithm. We submitted designs to all five challenges. Agents generated hypotheses, performed much of the analysis and operational work, and reviewed the resulting evidence. Our role as humans included setting priorities, challenging decisions, authorizing consequential runs and completing submissions.
+
+Before describing the agentic workflow, it helps to understand the scientific task. Each challenge asked for binding to a target, but affinity alone could not satisfy the full objective. Some designs needed to respond to pH, some needed to recognize both human and mouse proteins, one needed to activate a receptor, and another needed to discriminate a single amino-acid change.
 
 ## What distinguished this competition
 
 Earlier competitions already connected computational design to experimental testing. Adaptyv's [2024 EGFR competition](https://proteinbase.com/competitions/adaptyv-egfr-binder2) and [Nipah competition](https://proteinbase.com/competitions/adaptyv-nipah-competition) described affinity-based winner rankings. They also had therapeutic motivations; function was not a new concern introduced here.
 
-What stood out in this competition was the combination of **five targets, explicit conditional or functional objectives, and support for using language-model tools in the design process**. A good interface in one structure was only part of the question. We also had to ask what would happen under a different pH, against another species or target state, or in a functional assay.
+What stood out in this competition was the combination of **five targets, explicit conditional or functional objectives, and encouragement to use language-model tools in the design process**. A good interface in one structure was only part of the question. We also had to ask what would happen under a different pH, against another species or target state, or in a functional assay.
 
-Anthropic and Adaptyv organized the competition around overlapping challenge windows, with selected designs going to experimental validation and results to be shared on Proteinbase. Claude use was a condition of Anthropic support in Tracks 1 and 2; the open track allowed other methods. The competition did not prescribe our coordinator–coding–reviewer arrangement. That was how we organized our own work. [Official competition](https://proteinbase.com/competitions/anthropic-adaptyv-2026).
-
-> **FIGURE 1 PLACEHOLDER — Competition overview.** Add a screenshot or illustration from the official competition page. Caption it with the source URL and capture date, and distinguish the organizer's testing program from our submitted designs.
+![Official competition illustration combining protein structure and laboratory-assay motifs](https://api.proteinbase.com/storage/v1/object/public/competition_images/ChatGPT%20Image%20Sep%2017,%202026,%2010_30_02%20PM.png)
+> **Figure 1. Competition theme illustration.** Image linked from the [official Anthropic × Adaptyv competition website](https://proteinbase.com/competitions/anthropic-adaptyv-2026). Credit: Anthropic / Adaptyv / Proteinbase. This third-party illustration is not a result from our project; see the [rights notice](../reuse.html#third-party-material).
 
 ## Five targets and the requirements beyond affinity
 
@@ -50,7 +53,8 @@ The recorded H409 patch contained 16 exposed residues, 15 identical in the mouse
 
 That reasoning supplied a site and mechanism proposal. Subsequent pKa calculations gave limited support for the desired switch; contact with a histidine did not establish the required response.
 
-> **FIGURE 2 PLACEHOLDER — EGFR site selection.** Show domain III in receptor context, the proposed H409 patch, H409/H346 and the human–mouse difference. State mature versus UniProt numbering. Credit experimental reference 6ARU; label the highlighted patch as our recorded agent proposal.
+![EGFR domain III with a blue H409-centered patch and five labeled hotspot residues](../assets/figures/C1.png)
+> **Figure 2. An H409-centered design hypothesis on EGFR domain III.** The blue surface marks the recorded 16-residue patch on the 6ARU-derived chain-A target; L325, Q384, H409, Q411 and K465 are labeled hotspot residues. Numbers refer to mature EGFR; add 24 for UniProt P00533 precursor numbering. H346 was investigated separately and is not labeled here. This target crop illustrates site selection, not an experimentally demonstrated pH switch. [Structural reference: 6ARU](https://www.rcsb.org/structure/6ARU).
 
 ### TNF: design against the trimer, then examine the chemistry
 
@@ -60,7 +64,8 @@ The proposed mechanism emphasized binder histidines whose protonation might dest
 
 Review later challenged some of the geometric evidence supporting the strategy. That trajectory belongs in Article 3; the initial lesson here is that assembly, species and atom-level chemistry all mattered to site selection.
 
-> **FIGURE 3 PLACEHOLDER — TNF inter-protomer patch.** Show the complete trimer, distinguish protomers and highlight the recorded V91 patch across A/C. Add a close-up of proposed histidine interactions only after checking the actual sidechain atoms and chain-specific numbering.
+![TNF trimer with a blue patch crossing the interface between two protomers](../assets/figures/C2.png)
+> **Figure 3. A proposed inter-protomer epitope on TNF-α.** Blue marks the 17 residue copies selected across chains A and C of the canonical-sequence predicted trimer used for design: A85–92, A125, A127, A131, A135, C32–34 and C146–147. Gray shows the remaining target surface. Numbers refer to the mature 157-residue TNF chain. The image shows the target patch; no designed binder or histidine-mediated interaction is depicted.
 
 ### GLP1R: reaching a pocket does not establish activation
 
@@ -70,17 +75,19 @@ The design intent was a compact scaffold with a pocket-reaching loop or tip, wit
 
 These residues were generation guidance, not an agonist pharmacophore. A pose in an active-state receptor structure could not establish signaling, and the campaign ultimately retained exploratory binding hypotheses with unresolved activation evidence.
 
-> **FIGURE 4 PLACEHOLDER — GLP1R pocket and approach.** Show receptor context, the pocket guides and extracellular access. Identify the 6X18-derived receptor preparation and its missing regions. Any membrane plane must come from a documented frame, not a decorative placement.
+![GLP1R with blue Q234, W306 and R310 pocket guides and salmon avoidance surfaces](../assets/figures/C3.png)
+> **Figure 4. Pocket guidance and intracellular avoidance on GLP1R.** Blue marks Q234, W306 and R310 in canonical human numbering; salmon marks the proposed 29-residue intracellular-side avoidance map. The target is a WT-reverted, sparsely resolved 6X18-derived receptor preparation: full sequence representation does not supply coordinates for missing regions. No membrane plane is shown. The colors describe design guidance, not a validated agonist pharmacophore or an enforced membrane barrier. [Structural reference: 6X18](https://www.rcsb.org/structure/6X18).
 
 ### TfR1: an accessible site within a complicated dimer
 
 The organizers recommended the apical domain. The agents evaluated a more specific initial pilot site using **N206/L209 on chain A of 11QC**, considering exposure and conservation while retaining the full A/B dimer as reference context.
 
-This choice also required attention to glycans, the second receptor subunit and transferrin compatibility. A reduced generation target could make a pilot cheaper, but its apparent accessibility still had to be examined against the omitted context.
+This choice also required attention to glycans, the second receptor subunit and transferrin compatibility. A reduced generation target lowered the represented system size, but its apparent accessibility still had to be examined against the omitted context.
 
 The highlighted guides describe that pilot decision, not every later candidate's footprint. The competition's binding measurements would not by themselves demonstrate brain transport, even though TfR1 is relevant to that application.
 
-> **FIGURE 5 PLACEHOLDER — TfR1 pilot guidance in context.** Show the dimer and N206/L209 on chain A. Distinguish observed glycans or other experimental context from modeled or missing features. Keep the full assembly visible alongside any crop.
+![Single-chain TfR1 proxy with blue N206 and L209 guides and a salmon avoidance surface](../assets/figures/C4.png)
+> **Figure 5. Pilot guidance on a single-chain TfR1 proxy.** Blue marks N206 and L209 on chain A of the 11QC-derived target, using canonical/author numbering. Salmon marks the proposed avoidance surface intended to discourage binding near the omitted dimer partner. Only the single receptor chain is depicted; the full A/B dimer remained the evaluation reference. The initial 112-residue and later 71-residue avoidance prescriptions were distinct from the successful diagnostic arm, which requested no avoidance selections. Neither this view nor the guidance establishes dimer compatibility, pH switching or brain transport. [Structural reference: 11QC](https://www.rcsb.org/structure/11QC).
 
 ### KRAS-G12D pMHC: recognizing the difference
 
@@ -90,7 +97,8 @@ That flexibility created another question: did a candidate depend on a generated
 
 Our generation target was a peptide–HLA platform crop. Available distal HLA/β2m context was restored for subsequent checks; it should not be depicted as if the full assay complex had been used throughout generation.
 
-> **FIGURE 6 PLACEHOLDER — pMHC specificity problem.** Show reference peptide/HLA context, highlight Asp6 versus Gly6 and mark A5/V8. Distinguish experimental references 7OW6/7OW5, generated crop models and restored-context overlays. Do not label a candidate mutant-specific on the basis of a contact picture.
+![KRAS-G12D peptide–HLA platform crop with blue peptide A5, D6 and V8 and salmon HLA exclusions](../assets/figures/C5.png)
+> **Figure 6. Peptide-focused guidance for KRAS-G12D pMHC design.** The 7OW6-derived design crop contains HLA-A*11:01 residues 1–182 and the separate ten-residue peptide VVVGADGVGK. Blue highlights peptide A5, D6 and V8; generation used either D6 or the alternative A5/V8 pair. D6 corresponds to KRAS Asp12 and is Gly6 in the WT peptide, which is not shown. Salmon marks HLA background/cut-face avoidance residues. The HLA α3 domain and β2-microglobulin were omitted from generation and are not depicted. A contact with the mutant peptide alone would not establish mutant specificity. [Structural reference: 7OW6](https://www.rcsb.org/structure/7OW6).
 
 ## What this first stage taught us
 
@@ -98,4 +106,6 @@ The agents turned broad biological goals into concrete choices: which assembly t
 
 All five challenges have been submitted. We do not yet have experimental binding or functional results for these designs. This series therefore examines the reasoning and evidence behind the hypotheses. Article 2 will describe the collaboration that produced them; Article 3 will follow decisions that changed, failed or missed an important question.
 
-**Discussion:** When selecting an epitope for conditional function, what evidence would make you reject an attractive site before generating a large candidate pool?
+---
+
+Original article text and project-created figures: all rights reserved. Commercial use and redistribution require prior written permission, subject to applicable law and platform terms. Third-party material retains its own rights. See [copyright and reuse](../reuse.html).

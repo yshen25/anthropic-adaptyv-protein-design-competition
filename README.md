@@ -4,9 +4,9 @@ Articles and selected reproducible examples from participation in the five-chall
 
 This repository is a curated publication companion. The original research workspace and its scientific evidence remain separate. Experimental performance of our submitted designs is not established in this repository.
 
-## Planned articles
+## Articles
 
-1. **[Five targets and the structural reasoning behind our designs](docs/articles/01-five-targets.md)** — draft covering competition context, binding and additional functional objectives, and the agents' epitope choices.
+1. **[AI-powered protein design: five targets closer to real drug development](docs/articles/01-five-targets.md)** — covering competition context, binding and additional functional objectives, and the agents' epitope choices.
 2. **How the agents collaborated** — hypothesis generation, execution, review, persistent state and human decisions.
 3. **What the decision trajectories revealed** — failure patterns, external questions and consequences for assay interpretation.
 
@@ -19,11 +19,11 @@ harness/       Documented agent instructions and workflow examples
 scripts/       Publication utilities
 ```
 
-Article 1 is a local draft with figure placeholders. Articles 2–3, code examples and the harness will be added as they are reviewed. Images are deferred and excluded from Git. Any later illustrative harness must be distinguished from tools actually used during the competition.
+Article 1 contains six figures: a linked official illustration and five local structural views. Articles 2–3, code examples and the harness will be added as they are reviewed. Only the selected article assets are eligible for Git; working renders and unused third-party downloads stay local. Any later illustrative harness must be distinguished from tools actually used during the competition.
 
 ## Edit the first article
 
-Edit `docs/articles/01-five-targets.md` in a text editor or Markdown preview. The YAML block at the top supplies the page layout and title; the text below is the article. Numbered figure placeholders describe the material still needed. The homepage links to the generated `.html` page; this README links to the Markdown source for repository browsing.
+Edit `docs/articles/01-five-targets.md` in a text editor or Markdown preview. The YAML block at the top supplies the page layout and title; the text below is the article. Numbered captions describe the displayed structures and distinguish guidance from biological results. The homepage links to the generated `.html` page; this README links to the Markdown source for repository browsing.
 
 Changes stay local until you explicitly push them. A local Git commit records a version; it does not publish a webpage.
 
@@ -41,4 +41,6 @@ Sources: [GitHub Pages publishing sources](https://docs.github.com/en/pages/gett
 
 ## Attribution and reuse
 
-Code, article and third-party asset licensing will be specified before release. No blanket reuse license is granted by this skeleton. Third-party figures retain their own attribution and rights.
+Original contributions are **all rights reserved**; see [LICENSE](LICENSE). Commercial use and redistribution require prior written permission, subject to applicable law and platform terms. This is not an open-source license. A public GitHub repository permits viewing and forking under GitHub’s terms. Third-party material and structural datasets retain their own terms; see [copyright and reuse](docs/reuse.md). CC BY-NC-ND is not used because it permits noncommercial redistribution.
+
+Before release, resolve the linked official illustration’s reuse status and check the actual GitHub Pages build. No push or deployment has been performed by this preparation.

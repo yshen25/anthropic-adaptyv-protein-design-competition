@@ -1,0 +1,46 @@
+{
+  "article": "docs/articles/01-five-targets.md",
+  "reviewed_date": "2026-11-11",
+  "figure1": {
+    "source": "https://proteinbase.com/competitions/anthropic-adaptyv-2026",
+    "storage": "remote image link in article; local copy excluded",
+    "rights": "permission/reuse license not confirmed; user requests retaining the link and flagging rights check"
+  },
+  "local_figures": [
+    {
+      "figure": 2,
+      "file": "C1.png",
+      "sha256": "14e28a39d405d097916f481b715fd5d0c49850d19309b6a474a79b8e1e614f49",
+      "caption_scope": "**Figure 2. An H409-centered design hypothesis on EGFR domain III.** The blue surface marks the recorded 16-residue patch on the 6ARU-derived chain-A target; L325, Q384, H409, Q411 and K465 are labeled hotspot residues. Numbers refer to mature EGFR; add 24 for UniProt P00533 precursor numbering. H346 was investigated separately and is not labeled here. This target crop illustrates site selection, not an experimentally demonstrated pH switch. [Structural reference: 6ARU](https://www.rcsb.org/structure/6ARU).",
+      "provenance_limit": "Supplied article rendering, visually inspected against recorded target/site guidance. Exact rendering session and source-file identity are not independently established by the PNG or historical render script."
+    },
+    {
+      "figure": 3,
+      "file": "C2.png",
+      "sha256": "d4f2ee59f6d4d10e39f21232a1ed05b218a97d64955169c11fe2d48f67e9d2ee",
+      "caption_scope": "**Figure 3. A proposed inter-protomer epitope on TNF-\u03b1.** Blue marks the 17 residue copies selected across chains A and C of the canonical-sequence predicted trimer used for design: A85\u201392, A125, A127, A131, A135, C32\u201334 and C146\u2013147. Gray shows the remaining target surface. Numbers refer to the mature 157-residue TNF chain. The image shows the target patch; no designed binder or histidine-mediated interaction is depicted.",
+      "provenance_limit": "Supplied article rendering, visually inspected against recorded target/site guidance. Exact rendering session and source-file identity are not independently established by the PNG or historical render script."
+    },
+    {
+      "figure": 4,
+      "file": "C3.png",
+      "sha256": "589b1273d3ea3c1726ebfe979c37b397bc470475df505c0af71439ab0ebdb87e",
+      "caption_scope": "**Figure 4. Pocket guidance and intracellular avoidance on GLP1R.** Blue marks Q234, W306 and R310 in canonical human numbering; salmon marks the proposed 29-residue intracellular-side avoidance map. The target is a WT-reverted, sparsely resolved 6X18-derived receptor preparation: full sequence representation does not supply coordinates for missing regions. No membrane plane is shown. The colors describe design guidance, not a validated agonist pharmacophore or an enforced membrane barrier. [Structural reference: 6X18](https://www.rcsb.org/structure/6X18).",
+      "provenance_limit": "Supplied article rendering, visually inspected against recorded target/site guidance. Exact rendering session and source-file identity are not independently established by the PNG or historical render script."
+    },
+    {
+      "figure": 5,
+      "file": "C4.png",
+      "sha256": "3672178a627afaf6ee0b4fb6c8223de42c7b0c806dcd458b2419c6ed82195fc9",
+      "caption_scope": "**Figure 5. Pilot guidance on a single-chain TfR1 proxy.** Blue marks N206 and L209 on chain A of the 11QC-derived target, using canonical/author numbering. Salmon marks the proposed avoidance surface intended to discourage binding near the omitted dimer partner. Only the single receptor chain is depicted; the full A/B dimer remained the evaluation reference. The initial 112-residue and later 71-residue avoidance prescriptions were distinct from the successful diagnostic arm, which requested no avoidance selections. Neither this view nor the guidance establishes dimer compatibility, pH switching or brain transport. [Structural reference: 11QC](https://www.rcsb.org/structure/11QC).",
+      "provenance_limit": "Supplied article rendering, visually inspected against recorded target/site guidance. Exact rendering session and source-file identity are not independently established by the PNG or historical render script."
+    },
+    {
+      "figure": 6,
+      "file": "C5.png",
+      "sha256": "1546dcadb058ac697c783a3b3866dd77783457e58e77e3debba55ba8595cc5fe",
+      "caption_scope": "**Figure 6. Peptide-focused guidance for KRAS-G12D pMHC design.** The 7OW6-derived design crop contains HLA-A*11:01 residues 1\u2013182 and the separate ten-residue peptide VVVGADGVGK. Blue highlights peptide A5, D6 and V8; generation used either D6 or the alternative A5/V8 pair. D6 corresponds to KRAS Asp12 and is Gly6 in the WT peptide, which is not shown. Salmon marks HLA background/cut-face avoidance residues. The HLA \u03b13 domain and \u03b22-microglobulin were omitted from generation and are not depicted. A contact with the mutant peptide alone would not establish mutant specificity. [Structural reference: 7OW6](https://www.rcsb.org/structure/7OW6).",
+      "provenance_limit": "Supplied article rendering, visually inspected against recorded target/site guidance. Exact rendering session and source-file identity are not independently established by the PNG or historical render script."
+    }
+  ]
+}
